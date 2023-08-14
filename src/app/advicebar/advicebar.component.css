@@ -1,0 +1,8 @@
+.position-fixed-bottom{
+    position: fixed;
+    bottom: 0;
+}
+
+.shadow{
+    box-shadow: rgba(0, 0, 0, 0.15) 0px -15px 5px -8px, rgba(0, 0, 0, 0.05) px -15px 5px -8px;
+}

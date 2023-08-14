@@ -6,12 +6,15 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material.module';
 import { ToolbarComponent } from './toolbar/toolbar.component';
-
+import { LoginCardComponent } from './login-card/login-card.component';
+import { AdvicebarComponent } from './advicebar/advicebar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ToolbarComponent
+    ToolbarComponent,
+    LoginCardComponent,
+    AdvicebarComponent
   ],
   imports: [
     BrowserModule,
