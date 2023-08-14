@@ -8,13 +8,17 @@ import { MaterialModule } from './material.module';
 import { ToolbarComponent } from './toolbar/toolbar.component';
 import { LoginCardComponent } from './login-card/login-card.component';
 import { AdvicebarComponent } from './advicebar/advicebar.component';
+import { TaskMainComponent } from './task-main/task-main.component';
+import { RegisterComponent } from './register/register.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ToolbarComponent,
     LoginCardComponent,
-    AdvicebarComponent
+    AdvicebarComponent,
+    TaskMainComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
