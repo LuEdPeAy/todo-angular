@@ -1,48 +1,45 @@
 <mat-accordion class="example-headers-align" multi>
-    <mat-expansion-panel>
-      <mat-expansion-panel-header style="border-top: 1px solid #673ab7;">
-        <mat-panel-title class="">
-          Sign Up?
-        </mat-panel-title>
-      </mat-expansion-panel-header>
-  <form action="">
-      <table class="example-full-width center-flex-column" style="width: 100%;"  cellspacing="0">
-        <tr>
-            <td style="width: 100%;">
-              <mat-form-field class="example-full-width">
-              <mat-label>Full name</mat-label>
-              <input type="text" matInput placeholder="Write your full name" required>
-              </mat-form-field>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <mat-form-field class="example-full-width">
-              <mat-label>Email</mat-label>
-              <input type="email" matInput placeholder="Write your email" required>
-              </mat-form-field>
-            </td>
-          </tr>
-        <tr>
-          <td>
-            <mat-form-field class="example-full-width">
+  <mat-expansion-panel>
+    <mat-expansion-panel-header style="border-top: 1px solid #673ab7;">
+      <mat-panel-title class="">
+        Sign Up?
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    <form action="">
+      <mat-grid-list cols="2" rowHeight="2:1">
+        <mat-grid-tile>
+          <mat-form-field class="example-full-width p-right-side-1">
+            <mat-label>Full name</mat-label>
+            <input type="text" matInput placeholder="Write your full name" required>
+          </mat-form-field>
+        </mat-grid-tile>
+        <mat-grid-tile>
+          <mat-form-field class="example-full-width">
+            <mat-label>Email</mat-label>
+            <input type="email" matInput placeholder="Write your email" required>
+          </mat-form-field>
+        </mat-grid-tile>
+        <mat-grid-tile>
+          <mat-form-field class="example-full-width p-right-side-1">
             <mat-label>Username</mat-label>
             <input type="text" matInput placeholder="Write your username" required>
-            </mat-form-field>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <mat-form-field class="example-full-width">
+          </mat-form-field>
+        </mat-grid-tile>
+        <mat-grid-tile>
+          <mat-form-field class="example-full-width">
             <mat-label>Password</mat-label>
             <input type="password" matInput placeholder="Write your password" required>
-            </mat-form-field>
-          </td>
-        </tr>
-        <tr>
-            <button type="submit" mat-raised-button color="accent">Sign up!</button>
-        </tr>
-      </table>
+          </mat-form-field>
+        </mat-grid-tile>
+      </mat-grid-list>
+      <mat-grid-list cols="1" rowHeight="7:1">
+        <mat-grid-tile>
+          <button type="submit" mat-raised-button color="accent">
+            Sign up!
+            <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="check" style="float: right !important;"></mat-icon>
+          </button>
+        </mat-grid-tile>
+      </mat-grid-list>
     </form>
-    </mat-expansion-panel>
-  </mat-accordion>
+  </mat-expansion-panel>
+</mat-accordion>

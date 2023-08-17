@@ -36,6 +36,10 @@ body { padding: 0; margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;
     padding-right: 1em;
 }
 
+.p-right-side-1{
+    padding-right: 1em;
+}
+
 .color-indigo{
     background-color: #673ab7;
 }
