@@ -3,6 +3,23 @@
 
 <div class="center-flex heigth-vh p-sides-1">
   <mat-card class="example-card border-gray shadow-card" style="width: 30vw;">
+
+    <form (ngSubmit)="onSubmit()" [formGroup]="loginForm">
+      <div class="form-group">
+        <label for="usernameInput">Usuario</label>
+        <input type="text" class="form-control" id="usernameInput" formControlName="username">
+        <div *ngIf="loginForm.get('username')?.touched && loginForm.get('username')?.errors?.['required']" class="text-danger" >Este campo es requerido</div>
+        <div *ngIf="loginForm.get('username')?.touched && loginForm.get('username')?.errors?.['minlength']" class="text-danger">Longitud miníma requerida</div>
+      </div>
+      <div class="form-group">
+        <label for="passwordInput">Contraseña</label>
+        <input type="password" class="form-control" id="passwordInput" formControlName="password">
+        <div *ngIf="loginForm.get('password')?.touched && loginForm.get('password')?.errors?.['required']" class="text-danger" >Este campo es requerido</div>
+      </div>
+      <div class="text-center">
+      <button type="submit" class="btn btn-primary" [disabled]="loginForm.invalid" >Iniciar sesión</button>
+    </div>
+    </form>
     <form action="">
       <mat-card-header class="color-indigo text-white flex-separate">
         <mat-card-title>Sing In</mat-card-title>
